@@ -1,14 +1,14 @@
 <html>
 <body>
-
 <script>
  student = {
     firstName : "Zhanerke",
     lastName  : "Musirali",
     age       : 20,
-    speciality  : "informatic"
-}
-Student.points = {
+    speciality  : "informatic"}
+
+
+student.points = {
 "js" : 100,
 "oipp" : 100, 
 "stp" : 100
@@ -24,13 +24,13 @@ array.push(student1)
 console.log(student);
 
 console.log(student.speciality);
-console.log(Student.points.stp);
+console.log(student.points.stp);
 delete student.age;
 console.log(student.age); 
 student.age="18"
 console.log(student.age);
 function calc(student){
-	return ((Student.points.stp+Student.points.js+Student.points.oipp)/3);
+	return ((student.points.js+student.points.oipp+student.points.stp)/3);
 }
 </script>
 
