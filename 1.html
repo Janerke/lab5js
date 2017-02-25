@@ -29,9 +29,10 @@ delete student.age;
 console.log(student.age); 
 student.age="18"
 console.log(student.age);
-function calc(student){
-	return ((student.points.js+student.points.oipp+student.points.stp)/3);
-}
+	var sum=0;
+for (var key in student.points ){
+sum+=student.points[key]}
+return sum/student.points.length[key] ; 
 </script>
 
 </body>
