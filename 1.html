@@ -1,37 +1,38 @@
 <html>
-</html>
-<script>
-Student = {}
-Student['name'] = "Zhanerke"
-Student['surname'] = "Mussirali"
-Student['specialty'] = "computer science"
+<body>
 
+<script>
+ student = {
+    firstName : "Zhanerke",
+    lastName  : "Musirali",
+    age       : 20,
+    speciality  : "informatic"
+}
 Student.points = {
 "js" : 100,
-"stp" : 100, 
-"ps" : 99,
-"comp.net" : 100
+"oipp" : 100, 
+"stp" : 100
 }
 	
-	var array = []
-array.push(Student)
-array.push(Student1)
-console.log(Student);
-	
-console.log(Student["surname"]);
+student1 = {
+	firstName: "Meiyr",
+	lastName: "Altynbekova"
+}
+var array = []
+array.push(student)
+array.push(student1)
+console.log(student);
 
+console.log(student.lastName);
 console.log(Student.points.js);
-
-delete Student.name;
-console.log(Student.name); 
-
-Student.name="Zhanerke"
-console.log(Student.name);
-
-function calc(Student){
-
-	return Student.points.stp+Student.points.js
+delete student.firstName;
+console.log(student.firstName); 
+student.name="Zhansaya"
+console.log(student.firstName);
+function calc(student){
+	return ((Student.points.stp+Student.points.js+Student.points.oipp)/3);
 }
-
-
 </script>
+
+</body>
+</html>
